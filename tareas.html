@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tareas.css">
+    <title>Tareas</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container-fluid">
+                <!-- Nav Content -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="paginaprincipal.html">Banana guest</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="imaginario.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MyUser<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pagina4.html">My Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="pagina2.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+
+<section> 
+<h2>Mis tareas</h2>      
+<div class="container">
+	<div class="row">
+		<div class="span5">
+            <table class="table table-striped table-condensed" id='table_tareas'>
+                  <thead>
+                  <tr>
+                      <th>Tarea</th>
+                      <th>Proyecto<th>
+                      <th>Fecha límite</th>
+                      <th>Rol usuario</th>
+                      <th>Estado</th>                                          
+                  </tr>
+              </thead>   
+              <tbody>
+                <tr>
+                    <td>inputs</td>
+                    <td>Chips'n'xips<td>
+                    <td>25/05/2017</td>
+                    <td>Editor</td>
+                    <td><span class="label label-success">Active</span>
+                    </td>                                       
+                </tr>
+                <tr>
+                    <td>Validar forms</td>
+                     <td>BearApp<td>
+                    <td>25/05/2017</td>
+                    <td>Staff</td>
+                    <td><span class="badge badge-important">Inactive</span></td>                                       
+                </tr>
+                <tr>
+                    <td>Lluvia de ideas</td>
+                     <td>BearApp<td>
+                    <td>25/05/2017</td>
+                    <td>User</td>
+                    <td> <span class="label label-success">Active</span></td>   
+                <tr>
+                    <td>forms</td>
+                     <td>BearApp<td>
+                    <td>25/05/2017</td>
+                    <td>Editor</td>
+                    <td><span class="label label-warning">Pending</span></td>                                       
+                </tr>
+                <tr>
+                    <td>propuestas</td>
+                     <td>Chips'n'xips<td>
+                    <td>25/05/2017</td>
+                    <td>Staff</td>
+                    <td><span class="label label-success">Active</span></td>                                        
+                </tr> 
+                   <tr>
+                    <td>hablar con cliente</td>
+                     <td>Rock'n'Roll app<td>
+                    <td>25/05/2017</td>
+                    <td>Editor</td>
+                    <td><span class="badge badge-important">Inactive</span>
+                    </td>                                       
+                </tr> 
+                   <tr>
+                    <td>Reunion</td>
+                     <td>Coke<td>
+                    <td>25/05/2017</td>
+                    <td>Editor</td>
+                    <td><span class="label label-success">Active</span>
+                    </td>                                       
+                </tr>
+                   <tr>
+                    <td>Revisar cambios</td>
+                     <td>BearApp<td>
+                    <td>25/05/2017</td>
+                    <td>Editor</td>
+                    <td><span class="label label-success">Active</span>
+                    </td>                                       
+                </tr>                                 
+              </tbody>
+            </table>
+            </div>
+	</div>
+</div>
+</section>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="scripts/bananaguest.js"></script>
+</html>

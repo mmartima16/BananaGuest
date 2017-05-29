@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create account</title>
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style3.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container-fluid">
+                <!-- Nav Content -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="paginaprincipal.html">Banana guest</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="imaginario.html" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MyUser<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pagina4.html">My Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="pagina2.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!--create account-->
+    <div class="container">
+        <div class="row">
+            <h2>Create account.</h2>
+        </div>
+        <form class="account ">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="form-group form-group-sm">
+                        <label for="name_crear" class="control-label">Firstname</label>
+                        <input type="text" class="form-control" id="name_crear" placeholder="Name" minlegth="2" maxlength="10" pattern="[a-zA-Z]*" required>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                        <label for="username_crear" class="control-label">User name</label>
+                        <input type="text" class="form-control" id="username_crear" placeholder="example.bananaguest" value='.bananaguest' pattern="[a-zA-Z]*\.bananaguest" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                        <label for="email_crear" class="control-label">Email</label>
+                        <input type="email" class="form-control" id="email_crear" placeholder="example@e.es" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                        <label for="password_crear" class="control-label">Password</label>
+                        <input minlength='6' type="text" class="form-control" id="password_crear" placeholder="Password" required>
+                    </div>
+                </div>
+                <div id='errores2'></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <button id="btn_crear" type="submit" class="btn btn-default"><a id="create" href="pagina3-2.html">Create</a></button>
+                </div>
+
+            </div>
+        </form>
+
+
+
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src = "scripts/bananaguest.js"></script>
+
+</html>

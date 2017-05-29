@@ -1,0 +1,349 @@
+body,
+html {
+    height: 100%;
+}
+#tit_menu{
+    color: #ffff00;
+    font-size: 17px;
+}
+body {
+    background-color: #363636;
+    color: #ffff00;
+}
+
+nav.sidebar,
+.main {
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+
+.main {
+    padding: 10px 10px 0 10px;
+}
+
+@media (min-width: 765px) {
+    .main {
+        position: absolute;
+        width: calc(100% - 40px);
+        margin-left: 40px;
+        float: right;
+    }
+    nav.sidebar:hover+.main {
+        margin-left: 200px;
+    }
+    nav.sidebar.navbar.sidebar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+        color: #ffff00;
+    }
+    nav.sidebar .navbar-brand,
+    nav.sidebar .navbar-header {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    nav.sidebar a {
+        padding-right: 13px;
+    }
+    nav.sidebar .navbar-nav>li:first-child {
+        border-top: 1px #e5e5e5 solid;
+    }
+    nav.sidebar .navbar-nav>li {
+        border-bottom: 1px #e5e5e5 solid;
+    }
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    nav.sidebar .navbar-collapse,
+    nav.sidebar .container-fluid {
+        padding: 0 0px 0 0px;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+    nav.sidebar {
+        width: 200px;
+        height: 100%;
+        margin-left: -160px;
+        float: left;
+        margin-bottom: 0px;
+    }
+    nav.sidebar li {
+        width: 100%;
+    }
+    nav.sidebar:hover {
+        margin-left: 0px;
+    }
+    .forAnimate {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1330px) {
+    .main {
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+    nav.sidebar {
+        margin-left: 0px;
+        float: left;
+    }
+    nav.sidebar .forAnimate {
+        opacity: 1;
+    }
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover,
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+}
+
+nav:hover .forAnimate {
+    opacity: 1;
+}
+
+section {
+    padding-left: 15px;
+}
+
+.profile {
+    margin: 20px 0;
+}
+
+
+/* Profile sidebar */
+
+.profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+}
+
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+}
+
+.profile-usermenu {
+    margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+}
+
+
+/* Profile Content */
+
+.profile-content {
+    padding: 20px;
+    background: #fff;
+    color: black;
+    min-height: 460px;
+}
+
+
+/*table*/
+
+
+/*------------ModalProjectsTable--------------*/
+
+.info_proyecto{
+    color:black;
+}
+.subprojects td[colspan] {
+    padding: 10px 20px 20px;
+}
+
+.subprojects td[colspan] table {
+    border-left: 5px solid #3071A9;
+    border-bottom-left-radius: 5px;
+    color:black;
+}
+
+.subprojects td[colspan] table td[colspan] table {
+    border-color: #449D44;
+}
+
+.subprojects td[colspan] table td[colspan] table td[colspan] table {
+    border-color: #EC971F;
+}
+
+.subprojects td[colspan] table td[colspan] table td[colspan] table td[colspan] table {
+    border-color: #777;
+}
+
+.subprojects tr:hover>td:not([colspan]) {
+    background-color: #AED3E5;
+    cursor: pointer;
+}
+
+.subprojects tbody tr.current td {
+    background-color: #D9EDF7;
+}
+
+.subprojects tr>td:first-child:not([colspan]) {
+    width: 45px;
+    color: blue;
+}
+
+.subprojects i.glyphicon-refresh {
+    animation: drehen 4s linear infinite;
+    color: blue;
+}
+
+@keyframes drehen {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+---------------------------------------------------------------------------------
+#pop_up{
+    position: absolute;
+    top:200px;
+    left:100px;
+    width:80%;
+    height:640px;
+    border:2px solid orange;
+}
+div.salta{
+    display:none;
+}
+div.show{
+    display: block;
+}
+----------------------------------------------------------------------------------
+/*ventana modal editar*/
+#modal_edit{
+    display: none;
+}
+#modal_edit.modal_edit_none{
+    display: none;
+}
+#modal_edit.modal_edit_show{
+    display: block;
+}
+#textarea_edit{
+    width: 550px;
+}
+/*ventana modal nuevo proyecto*/
+#modal_nuevo{
+    display: none;
+}
+#modal_nuevo.modal_edit_none{
+    display: none;
+}
+#modal_nuevo.modal_show{
+    display: block;
+}
+/*---------------------------------------------------------------------------------*/
+/*------------------CamposProject Forms---------------------------------------*/
+.campos{
+    color:black;
+    background-color: darkorange;
+}
+.campos #capturar{
+    color:black;
+}
+#hey{
+    height:25px;
+    background-color: white;
+    color:black;
+}
+/*ventana modal nuevo proyecto*/
+
+form{
+    color: black;
+}
+#tit_nuevo_proyecto{
+        color: black;
+        text-align: center;
+}
+/*ventana modal mensajes*/
+#tit_editarproyecto{
+        color: black;
+        text-align: center;
+}
+

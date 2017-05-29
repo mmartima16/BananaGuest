@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Banana APP</title>
+</head>
+    <body>
+        <h2>Editar proyecto</h2>
+    <form id='nuevo_proyecto'>
+
+    <div class="form-group">
+        <h4 class='tit_form_nuevo'>Nombre del proyecto:</h4>
+        <label for="exampleInputName2"></label>
+        <input type="text" class="form-control" id="nombre_proyecto" placeholder="Escriba aquí" required>
+    </div>
+
+    <div>
+        <h4 class='tit_form_nuevo'>Descripción del proyecto:</h4>
+        <textarea class="form-control" rows="3" id='descrip_proyecto'></textarea>
+    </div>
+
+    <div class="form-group">
+        <h4 class='tit_form_nuevo'>Añadir colaboradores:</h4>
+        <label for="exampleInputName2">Names</label>
+        <input type="text" class="form-control" id="nombre_colab" placeholder="Jane Doe, David Hawkings,etc." pattern="[a-zA-Z]*"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail2">Emails</label>
+        <input type="email" class="form-control" id="email_colab" placeholder="email1@example.com, email2@example.com,etc." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required>
+    </div>
+
+    <div class="form-group">
+        <h4 class='tit_form_nuevo'>Seleccionar archivo:</h4>
+        <label for="exampleInputFile"></label>
+        <input type="file" id="exampleInputFile">
+    </div>
+    <div id='errores3'></div>
+</form>
+    </body>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="/scripts/bananaguest.js"></script>
+</html>

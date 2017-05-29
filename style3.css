@@ -1,0 +1,51 @@
+body {
+    background-color: #FFFF00;
+}
+
+
+/*FORM*/
+
+h2 {
+    margin-left: 5px;
+}
+
+#btn {
+    background: black;
+    border: 2px solid black;
+}
+
+#create {
+    text-decoration: none;
+    color: #FFFF00;
+}
+
+.container {
+    width: 320px;
+    padding: 50px;
+}
+
+.message {
+    text-align: center;
+}
+
+
+/*Profile page*/
+
+.userimage {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+.sectionuser {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+video {
+    height: 200px;
+    width: 300px;
+}
+
+.video {}
